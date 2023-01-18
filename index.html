@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>RPS</title>
+  </head>
+  <body>
+    <header>
+      <h1>ROCK PAPER SCISSOR</h1>
+    </header>
+
+    
+    <div class="score-box">
+     
+      <div>
+        <p class="playerSign">?</p>
+        <p>PLAYER:</p>
+        <p class="player-score">0</p>
+      </div>
+      <div>
+        <p class="computerSign">?</p>
+        <p>COMPUTER:</p>
+        <p class="computer-score">0</p>
+      </div>
+     
+      
+    </div>
+    <div class="result">
+      <p>Choose your weapon (✊ ✋ ✌): </p>
+      <p class="rule hovertext" data-hover="SCISSOR BEATS PAPER, PAPER BEATS ROCK, ROCK BEATS SCISSOR">
+         RULES:</p>
+    </div>
+
+    <div class="symbols">
+      <div class="rock column">
+        <button class="btn btn-square" id="rckBtn">
+        <p class="sign">✊</p>
+        
+      </button>
+      </div>
+      <div class="paper column">
+        <button class="btn btn-square" id="pprBtn">
+        <p class="sign">✋</p>
+        
+      </button>
+      </div>
+      <div class="scissor column">
+        <button class="btn btn-square" id="scrBtn">
+        <p class="sign">✌</p>
+      
+      </button>
+      </div>
+    </div>
+    
+    <script src="index.js"></script>
+  </body>
+</html>

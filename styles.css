@@ -1,0 +1,108 @@
+
+body {
+  text-align: center;
+  background-color: #252525;
+  margin: 0;
+}
+header{
+  margin: 0;
+  padding: 10px;
+  background-color: #666666;
+}
+h1 {
+ 
+  
+  color:white;
+  font-size: 3rem;
+}
+.symbols {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  padding-top: 50px;
+  position: relative;
+  bottom: -100px;
+}
+
+.result{
+  font-size: 2rem;
+  color: white;
+}
+.score-box {
+  display: flex;
+ border: 3px solid white;
+ border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  color: white;
+  flex:33.33%;
+  padding: 50px;
+  font-size: 2rem;
+  height: 100px;
+  width: 500px;
+  position: relative;
+  top: 80px;
+}
+
+
+
+button {
+  background-color: rgb(107, 120, 116);
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border-radius: 50%;
+  border: 3px solid rgb(167, 166, 166);
+}
+button:hover {
+  background-color: #808080;
+}
+.sign {
+  font-size: 4rem;
+  position: relative;
+  top: -8px;
+  text-align: center;
+
+}
+
+.result{
+  position: absolute;
+  
+  left: 35%;
+  top: 120px;
+}
+
+
+.hovertext {
+  position: absolute;
+  left: -520px;
+  top: 5px;
+  border-bottom: 1px dotted black;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 400px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
