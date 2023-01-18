@@ -70,7 +70,7 @@ function lose(player, computer){
 }
 
 function draw(player, computer){
-  result.innerHTML = `${convertToWord(player)}  equals  ${convertToWord(computer)}. It's a draw :`;
+  result.innerHTML = `${convertToWord(player)}  equals  ${convertToWord(computer)}. It's a draw.`;
   playerSign.innerHTML = playerSignChoice(player);
   computerSign.innerHTML = computerSignChoice(computer)
 
